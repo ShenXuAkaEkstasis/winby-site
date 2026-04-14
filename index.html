@@ -3,115 +3,222 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>winby.ai | AI Decision System</title>
+  <title>winby</title>
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      font-family: Arial, sans-serif;
       color: #111;
       background: #fff;
       line-height: 1.6;
     }
-    .wrap {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 20px;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 24px;
+    }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 16px;
     }
     h1 {
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 20px;
+      font-size: 48px;
+      line-height: 1.1;
+      margin: 0 0 24px 0;
     }
     h2 {
-      margin-top: 40px;
-      font-size: 16px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      font-size: 28px;
+      margin: 0 0 16px 0;
     }
     p {
       font-size: 18px;
-      margin: 0 0 16px 0;
+      color: #333;
+      margin: 0 0 18px 0;
     }
-    .flow {
-      border: 2px solid #000;
-      padding: 20px;
-      margin: 30px 0;
-      font-weight: bold;
-      font-size: 18px;
+    .section {
+      border-top: 1px solid #e5e5e5;
     }
-    ul {
-      font-size: 18px;
-      padding-left: 22px;
-      margin-top: 0;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
     }
-    li {
-      margin-bottom: 8px;
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 40px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .small-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid #111;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .button.secondary {
+      border-color: #ccc;
+      color: #444;
+    }
+    .link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #111;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      .grid,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
+  <section>
+    <div class="container">
+      <div class="eyebrow">WINBY</div>
+      <h1>From Click-Based Discovery to AI Decision Infrastructure</h1>
+      <p>
+        winby is designed for a structural transition already underway:
+        decision-making is shifting from human browsing to AI-led evaluation,
+        comparison, and selection.
+      </p>
+      <p>
+        As AI systems increasingly act as decision-makers, the critical layer is
+        no longer attention acquisition, but the infrastructure that shapes how
+        options are structured, interpreted, and selected.
+      </p>
 
-<div class="wrap">
+      <div class="buttons">
+        <a class="button" href="framework.html">View Framework</a>
+        <a class="button secondary" href="#validation">Early Validation</a>
+      </div>
+    </div>
+  </section>
 
-<h1>From Click-Based Discovery to AI Decision Systems</h1>
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <div class="small-title">The Shift</div>
+          <p>
+            Traditional digital systems rely on search, clicks, manual
+            comparison, and human attention. This logic weakens as AI agents
+            increasingly take over discovery and evaluation.
+          </p>
+        </div>
+        <div>
+          <div class="small-title">The Problem</div>
+          <p>
+            When decisions move into AI systems, visibility no longer guarantees
+            influence, content is no longer the primary input, and clicks are no
+            longer reliable signals.
+          </p>
+        </div>
+        <div>
+          <div class="small-title">The Response</div>
+          <p>
+            winby introduces a decision infrastructure layer designed to
+            structure options, enable comparability, and shape evaluation
+            pathways inside AI-driven decision flows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>
-<strong>winby</strong> is an early-stage AI decision mediation system designed for a structural shift already underway:
-decisions are moving away from human browsing and toward AI-led evaluation, comparison, and selection.
-</p>
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2>A new competitive layer</h2>
+          <p>
+            winby is not positioned as a visibility tool. It is designed as a
+            structural layer inside AI-driven decision systems, where the core
+            challenge is no longer getting attention, but influencing how
+            evaluation and selection actually happen.
+          </p>
+          <p>
+            In this transition, the key question is no longer “How do we get
+            attention?” but “How are decisions formed inside AI systems?”
+          </p>
 
-<div class="flow">
-User Intent → AI Agent Evaluation → winby Mediation Layer → Decision Outcome
-</div>
+          <a class="link" href="framework.html">Read the full framework →</a>
+        </div>
 
-<h2>Problem</h2>
-<p>
-Traditional digital systems depend on human attention, clicks, and manual comparison.
-As AI agents increasingly take over discovery and evaluation processes,
-the foundations of click-based influence begin to weaken.
-</p>
+        <div class="card">
+          <div class="small-title">Core Positioning</div>
+          <p><strong>Category</strong><br>AI decision infrastructure</p>
+          <p><strong>Current Stage</strong><br>Early-stage controlled testing</p>
+          <p><strong>Focus</strong><br>AI-led evaluation, structured comparability, decision mediation</p>
+          <p><strong>Implication</strong><br>Influence is shifting from attention acquisition to decision infrastructure</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>System</h2>
-<p>
-winby introduces a mediation layer inside AI-driven decision flows.
-Rather than competing for visibility, the system is designed to shape how AI agents interpret options,
-compare alternatives, and form decisions.
-</p>
-
-<h2>Use Contexts</h2>
-<p>
-The system has been explored in AI-assisted decision environments where human comparison is reduced or removed, including:
-</p>
-
-<ul>
-  <li>Vendor and supplier selection workflows</li>
-  <li>Product comparison and recommendation scenarios</li>
-  <li>AI-assisted evaluation in sourcing and procurement contexts</li>
-</ul>
-
-<h2>Early Validation</h2>
-<p>
-In early-stage, limited-scope deployments (not publicly accessible), winby was applied within these contexts,
-where observable shifts in AI-driven decision formation were identified.
-Mediation logic influenced comparison pathways and contributed to differences in final selection outcomes.
-</p>
-
-<h2>Availability</h2>
-<p>
-winby is currently being tested in controlled environments and is not yet offered as an open self-serve product.
-</p>
-<p>
-The current focus is on validating mediation logic in real decision scenarios rather than scaling public access.
-</p>
-
-<h2>Implication</h2>
-<p>
-This points to a broader structural transition: influence is moving from attention acquisition to decision mediation.
-In this environment, the key competitive layer is no longer the click,
-but the logic that shapes how AI systems evaluate and decide.
-</p>
-
-</div>
-
+  <section id="validation" class="section">
+    <div class="container">
+      <h2>Early Validation</h2>
+      <div class="grid">
+        <div class="card">
+          <p><strong>Use Contexts</strong></p>
+          <p>
+            Explored in environments where human comparison is reduced,
+            including vendor selection, product recommendation, and sourcing
+            workflows.
+          </p>
+        </div>
+        <div class="card">
+          <p><strong>Observed Shifts</strong></p>
+          <p>
+            In controlled environments, introducing structured mediation
+            resulted in observable changes in evaluation pathways, comparison
+            behavior, and final selection outcomes.
+          </p>
+        </div>
+        <div class="card">
+          <p><strong>Availability</strong></p>
+          <p>
+            winby is currently under controlled testing and is not yet offered
+            as a public self-serve product. The focus remains on validating
+            infrastructure behavior in real scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
