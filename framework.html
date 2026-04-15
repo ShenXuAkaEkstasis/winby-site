@@ -17,53 +17,220 @@
       margin: 0 auto;
       padding: 56px 24px;
     }
-    h1 { font-size: 40px; }
-    h2 { font-size: 26px; margin-top: 40px; }
-    p { font-size: 18px; color: #333; }
-    .section { border-top: 1px solid #e5e5e5; }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin: 0 0 24px 0;
+    }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 16px 0;
+    }
+    h3 {
+      font-size: 20px;
+      margin: 0 0 12px 0;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+      margin: 0 0 18px 0;
+    }
+    .section {
+      border-top: 1px solid #e5e5e5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
     .card {
       border: 1px solid #ddd;
       border-radius: 16px;
       padding: 24px;
-      margin-top: 20px;
     }
-    a { color: #111; }
+    .card.emphasis {
+      border: 2px solid #111;
+    }
+    .button {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #111;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .flow {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    a {
+      color: #111;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 34px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      p,
+      .flow {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <a href="index.html">← Back</a>
-    <h1>Decision Infrastructure Framework</h1>
-    <p>
-      winby operates as a structural layer within AI-driven decision systems.
-    </p>
-
-    <h2>1. Shift</h2>
-    <p>From human browsing → AI evaluation</p>
-
-    <h2>2. Problem</h2>
-    <p>Clicks and content lose influence in AI decisions</p>
-
-    <h2>3. System</h2>
-    <p>Structured options → evaluation pathways → decision outcomes</p>
-
-    <h2>4. Flow</h2>
-    <p>User → AI → winby → Decision</p>
-
-    <h2>5. Validation</h2>
-    <p>Observed shifts in AI evaluation behavior</p>
-
-    <h2>6. Implication</h2>
-    <p>Influence shifts to decision infrastructure</p>
-
-    <div class="card">
-      <p><strong>Status</strong><br>Early-stage controlled testing</p>
-      <p><strong>Contact</strong><br>
-        <a href="mailto:contact@winby.ai">contact@winby.ai</a>
+  <section>
+    <div class="container">
+      <a class="button" href="index.html">← Back to Home</a>
+      <div class="eyebrow">WINBY FRAMEWORK</div>
+      <h1>Decision Mediation in AI-Driven Evaluation Systems</h1>
+      <p>
+        <strong>winby is an AI decision mediation layer for agent-driven evaluation.</strong>
+      </p>
+      <p>
+        It introduces a structured layer between AI evaluation and final selection,
+        focusing on how alternatives are interpreted, compared, and prioritized.
       </p>
     </div>
-  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>1. Structural Shift</h2>
+      <p>
+        Digital systems have historically relied on human attention, visibility,
+        and manual comparison. As AI systems increasingly take over discovery and
+        evaluation, decision-making shifts away from browsing toward structured,
+        automated comparison processes.
+      </p>
+      <p>
+        In this environment, influence is no longer defined primarily by what is
+        seen, but by how evaluation is conducted.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>2. System Overview</h2>
+      <p>
+        winby introduces a mediation layer between AI evaluation and final decision.
+      </p>
+
+      <div class="flow">
+        User Intent → AI Evaluation → Mediation Layer → Decision Outcome
+      </div>
+
+      <p>
+        The system focuses on structuring how AI systems interpret, compare, and
+        prioritize options rather than competing for visibility.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>3. Core Capabilities</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Structured Comparison</h3>
+          <p>
+            Defines structured comparison workflows so alternatives can be
+            evaluated consistently rather than informally inferred.
+          </p>
+        </div>
+        <div class="card emphasis">
+          <h3>Evaluation Sequencing</h3>
+          <p>
+            Organizes evaluation criteria and sequencing, shaping how options are
+            assessed within AI-driven workflows.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Traceable Decisions</h3>
+          <p>
+            Enables traceable decision pathways, making evaluation processes more
+            inspectable and reproducible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>4. What Is Being Explored</h2>
+      <p>
+        winby is currently being developed and tested in controlled prototype
+        environments.
+      </p>
+      <p>
+        The current work focuses on structuring reproducible evaluation processes,
+        where comparison steps, criteria ordering, and decision logic are
+        explicitly defined. This enables consistent and inspectable evaluation
+        pathways within AI-driven systems.
+      </p>
+      <p>
+        At this stage, the emphasis is on process-level structure rather than
+        outcome optimization.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>5. Implications</h2>
+      <p>
+        This approach has implications across domains where AI assists or replaces
+        human comparison, including procurement, recommendation systems, and
+        automated evaluation workflows.
+      </p>
+      <p>
+        As evaluation becomes increasingly automated, structuring decision
+        processes becomes the primary point of influence.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>6. Related Work</h2>
+      <p>
+        Related conceptual work explores broader system-level transitions in
+        AI-driven environments, including agent-based evaluation processes and
+        shifts from visibility-based to system-level influence mechanisms.
+      </p>
+      <p>
+        <strong>winby represents an early-stage step toward formalizing decision mediation as a foundational layer in AI-driven systems.</strong>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p><strong>Status</strong><br>Early-stage controlled testing</p>
+        <p>
+          <strong>Contact</strong><br>
+          <a href="mailto:contact@winby.ai">contact@winby.ai</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
